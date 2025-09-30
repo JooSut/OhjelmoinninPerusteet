@@ -57,7 +57,7 @@ elif choice == 2:
         print("\nProgram ending.")
 
 elif choice == 0:
-    print("Exiting...")
+    print("\nExiting...")
     print("\nProgram ending.")
 
 else:
