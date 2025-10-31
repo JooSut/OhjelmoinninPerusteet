@@ -22,8 +22,8 @@ while n >= 10 and n != 0:
         print("No more steps.\n")
         break
 
-if n < 10:
-    print("No more steps.\n")
+    if n < 10:
+        print("No more steps.\n")
 
 print(f"This program took {steps} step(s)\n")
 print("Program ending.")
