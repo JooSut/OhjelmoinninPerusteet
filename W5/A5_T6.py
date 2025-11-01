@@ -1,9 +1,9 @@
 def showOptions():
     print("Options:")
-    print("1. Show count")
-    print("2. Increase count")
-    print("3. Reset count")
-    print("0. Exit")
+    print("1 - Show count")
+    print("2 - Increase count")
+    print("3 - Reset count")
+    print("0 - Exit")
 
 
 def askChoice():
@@ -25,23 +25,28 @@ def main():
         choice = askChoice()
 
         if choice == 1:
-            print(f"Current count: {counter}\n")
+            print(f"Current count: - {counter}")
+            print("")
 
         elif choice == 2:
             counter += 1
-            print("Count increased!\n")
+            print("Count increased!")
+            print("")
 
         elif choice == 3:
             counter = 0
-            print("Cleared count!\n")
+            print("Cleared count!")
+            print("")
 
         elif choice == 0:
             print("Exiting program.")
             running = False
 
         elif choice != -1:
-            print("Unknown option!\n")
+            print("Unknown option!")
+            print("")
 
-    print("\nProgram ending.")
+if __name__=="__main__":
+    main()
 
-main()
+print("\nProgram ending.")
